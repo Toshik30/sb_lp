@@ -1,7 +1,7 @@
 {
   "name": "slide-pages",
   "version": "1.0.0",
-  "description": "\"# slide-pages\"",
+  "description": "\"# lb_lp\"",
   "main": "webpack.config.js",
   "scripts": {
     "dev": "webpack --mode development",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Toshik30/slide-pages.git"
+    "url": "git+https://github.com/Toshik30/lb_lp.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Toshik30/slide-pages/issues"
+    "url": "https://github.com/Toshik30/lb_lp/issues"
   },
-  "homepage": "https://github.com/Toshik30/slide-pages#readme",
+  "homepage": "https://github.com/Toshik30/lb_lp#readme",
   "devDependencies": {
     "chokidar": "^3.3.1",
     "clean-webpack-plugin": "^3.0.0",
