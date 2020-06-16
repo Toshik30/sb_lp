@@ -1,3 +1,440 @@
 @import "../base/variables";
 
+.header {
+	background: url(/images/elements.png) 115px 17px no-repeat,url(/images/girl_left.png) 315px 95% no-repeat,url(/images/girl_right.png) 1289px 34px no-repeat, url(/images/bg.jpg) no-repeat;
+	padding: 2em 0 0;
 
+
+	.header-content {
+		height: 635px;
+		width: 365px;
+    	margin: 0 auto;
+
+		.big-input {
+			font-size: 20px;
+			padding: 15px;
+			line-height: 28px;
+			margin-top: 41px;
+		}
+		.information {
+			display: flex;
+		}
+		
+		form {
+			margin: 10px 0 39px;
+
+			span {
+				input {
+					background-color: tomato;
+				}
+			}
+		}
+		.small-input {
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 28px;
+			padding: 13px;
+		}
+		.date {
+			width: 118%;
+		}
+		.iti--allow-dropdown {
+			display: inline-flex;
+			margin-left: 5px;
+
+			input {
+				width: 100%;
+   				padding-right: 44px;
+			}
+		}
+
+
+		.logotype {
+			img {
+				margin: 32px auto;
+    			display: flex;
+			}
+		}
+
+		.registration {
+			display: flex;
+		    flex-direction: column;
+		    width: 105%;
+		    margin: 0px auto;
+		    text-align: center;
+		}
+
+		p {
+			margin: 25px 0 13px;
+			font-size: 20px;
+			line-height: 42px;
+			letter-spacing: 0.444444px;
+		}
+	}
+}
+
+.statistic {
+	background: url(/images/pattern6.png);
+	margin-top: -4px;
+}
+.about-us {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	align-items: center;
+}
+.content {
+	width: 100%;
+	padding-left: 20px;
+
+	h2 {
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 59px;
+	margin:15px 0;
+	}
+
+	p {
+		line-height: 18px;
+	}
+}
+
+		
+
+.activate {
+	background: url(/images/f2.png) 241px 104px no-repeat,url(/images/f4_2.png) 1152px 256px no-repeat,url(/images/f4.png) 1172px 52px no-repeat, url(/images/f33.png) 382px 38px no-repeat, url(/images/arr1.png) 916px 143px no-repeat, url(/images/registration1.png) 8% -8px no-repeat;
+	
+
+	.bonus {
+		display: flex;
+	    flex-direction: column;
+	    width: 42%;
+	    margin: 0 auto;
+	    text-align: center;
+	    height: 552px;
+
+	    h1 {
+			font-size: 40px;
+			line-height: 84px;
+			margin: 34px 0;
+
+	    	span {
+	    		color: yellow;
+	    	}
+	    }
+	    .usd-100 {
+	    	    margin: 37px auto 24px;
+	    }
+	    button {
+	    	margin: 0 auto;
+	    	padding: 0px 133px;
+	    }
+	}	
+}
+.payment {
+	background: #000D21;
+	
+
+	.payment-content {
+		margin-top: -8px;
+		padding-top: 65px;
+	}
+	.payment-line {
+		display: flex;
+		position: relative;
+
+		&::before {
+			top: -20%;
+			content: "";
+		    border-top: 1px solid #ffffff4d;
+		    width: calc(77% - -252px);
+		    position: absolute;
+		    left: 26px;
+		}
+		&::after {
+			bottom: -11%;
+			content: "";
+		    border-top: 1px solid #ffffff4d;
+		    width: calc(77% - -252px);
+		    position: absolute;
+		    left: 26px;
+		}
+	}
+
+	.wrapper {
+		width: 14%;
+	    padding-left: 24px;
+    	margin-right: 51px;
+	}
+	.block {
+		display: flex;
+		flex-wrap: wrap;
+		width: 41%;
+
+		.content-box {
+			border: 1px solid #cccccc63;
+			border-radius: 4px;
+			height: 40px;
+			width: 152px;
+   			margin: 0 8px 15px;
+
+   			img {
+   				display: block;
+			    margin-left: auto;
+			    margin-right: auto;
+			    margin-top: 8px;
+			    max-height: 26px;
+   			}
+		}
+	}
+	.second {
+		display: flex;
+	    justify-content: flex-end;
+	    margin-right: 2px;
+	}
+	.politics {
+		margin-top: 41px ;
+		 
+		p {
+			font-style: normal;
+			font-weight: normal;
+			font-size: 10px;
+			line-height: 14px;
+			letter-spacing: 0.6px;
+			color: #cccccc63;
+			padding: 0 26px 77px;
+    		margin: 0;
+		}
+	}
+}
+
+@media (min-width: 300px) and (max-width: 699px) {
+
+	.header {
+		background: url(/images/girl_left.png) -117px 172px/408px no-repeat,
+					url(/images/girl_right.png) 56px 170px/477px no-repeat,
+					url(/images/bg.jpg) -574px -11px no-repeat;
+		height: 924px;
+
+		.header-content {
+			width: 100%;
+			p {
+				margin: 13px 0 5px;
+			}
+
+			 .logotype {
+
+				 	img {
+	   					margin: 8px auto 290px;
+	   				}
+	   			}
+
+			.registration {
+				width: 94%;
+
+				.small-input {
+					margin-bottom: 18px;
+				}
+				form {
+					margin: 22px 0 12px;
+				}
+
+				.information {
+					display: block;
+
+					.date {
+						width: 100%;
+					}
+					.iti--allow-dropdown {
+					   	margin-left: 0px; 
+					}
+				}
+			}
+		}	
+	}
+	.statistic {
+		.about-us {
+			flex-direction: column;
+			justify-content: center;
+			padding: 11px 0;
+
+			.content {
+				width: 100%;
+				padding-left: 0;
+			}
+		}
+	}
+	.activate {
+		background: url(/images/arr1.png) center 179px no-repeat,url(/images/registration1.png) 61% -3px/1960px no-repeat;
+
+		.bonus {
+			width: 100%;
+
+			h1 {
+				line-height: 50px;
+				margin: 62px 0 24px;
+			}
+			button {
+				width: 100%;
+			}
+			img {
+				width: 100%;
+			}
+		}
+	}
+	.payment {
+
+		.payment-content {
+			    padding-top: 76px;
+			    margin-top: -14px;
+
+			.payment-line {
+				flex-wrap: wrap;
+				align-items: center;
+				&::before {
+					display: none;
+				}
+				&::after {
+					display: none;
+				}
+
+				.wrapper {
+					margin: 0 auto;
+					display: flex;
+					padding-left: 0;
+    				justify-content: space-between;
+    				width: 90%;
+					padding: 0;
+
+					img {
+						width: 100%;
+					}
+				}
+				.block {
+					width: 	100%;
+					justify-content: space-between;
+    				margin-top: 12px;
+
+    				.content-box {
+    					height: 30px;
+    					width: 80px;
+   						margin: 0 5px 15px;
+
+   						img {
+   							max-height: 12px;
+    						max-width: 60px;
+   						}
+    				}
+				}
+				.second {
+					margin: 0;
+				}
+			}
+		}
+			.politics {
+			margin-top: 0;
+			margin: 32px 3px 0;
+		}
+	}
+}
+
+	
+
+@media (min-width: 700px) and (max-width: 980px) {
+
+	.header {
+		background: url(/images/girl_left.png) -89px 100%/313px no-repeat,
+					url(/images/girl_right.png)  537px 101px/354px no-repeat,
+					url(/images/bg.jpg) -574px -11px no-repeat;
+		padding-top: 21px;
+
+		.header-content {
+			width: 380px;
+
+			p {
+				margin: 25px 0 15px;
+			}
+			form {
+				margin: 10px 0 36px;
+			}
+
+			.registration{
+				width: 100%;
+
+				.big-input {
+					margin-top: 32px;
+				}
+			}
+		}
+	}
+	.statistic {
+		.about-us {
+			flex-wrap:wrap-reverse;
+			justify-content: center;
+			padding: 11px 0;
+
+			.content {
+				width: 263px;
+				padding-left: 0;
+			}
+		}
+	}
+	.activate {
+		background: url(/images/arr1.png) 342px 146px no-repeat,url(/images/registration1.png) 45% -8px no-repeat;
+		padding-top: 3px;
+		.bonus {
+			width: 	100%;
+
+			.usd-100 {
+				margin: 45px auto 10px;
+			}
+		}
+	}
+	.payment {
+
+		.payment-content {
+			    padding-top: 76px;
+			    margin-top: -14px;
+
+			.payment-line {
+				flex-direction: column;
+				align-items: center;
+				&::before {
+					top: -32px;
+					left: 5%;
+    				width: calc(48% - -314px);
+				}
+				&::after {
+					bottom:  -12px;
+					left: 5%;
+    				width: calc(48% - -314px);
+				}
+
+				.wrapper {
+					margin: 0 auto;
+					display: flex;
+					padding-left: 0;
+    				justify-content: space-between;
+    				width: 67%;
+					padding: 0;
+
+					img {
+						width: 231px;
+					}
+				}
+				.block {
+					width: 	70%;
+					justify-content: space-between;
+    				margin-top: 12px;
+				}
+				.second {
+					margin: 0;
+				}
+			}
+		}
+		.politics {
+		margin-top: 0;
+		margin: 32px 3px 0;
+	}
+	}
+}

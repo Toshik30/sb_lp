@@ -2,6 +2,7 @@
 @import "base/fonts";
 @import "base/variables";
 @import "base/mixins";
+@import "~intl-tel-input/build/css/intlTelInput.css";
 
 * {
 	box-sizing: border-box;
@@ -9,16 +10,52 @@
 }
 
 body {
+	color: white;
 	font-family: $primary-font;
-	color: $text-primary;
-	font-size: $primary-font-size;
+	
 }
 
 section {
-	padding: 2em 0;
+	// padding: 2em 0;
 }
+.container {
+	max-width: 1280px;
+	width: 100%;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+input {
+	background: #09223F;
+	border: 2px solid #366799;
+	box-sizing: border-box;
+	box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.15), 0px 15px 12px rgba(0, 0, 0, 0.11);
+	border-radius: 8px;
+	text-align: right;
+	// direction: rtl;
+}
+.btn-primary {
+	background: linear-gradient(89.2deg, #FFDC25 0.14%, rgba(255, 138, 0, 0.73) 99.29%), #FFD90F;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+	border-radius: 50px;
+	font-size: 36px;
+	line-height: 76px;
+	letter-spacing: 1.35px;
+	text-transform: uppercase;
+}
+.iti__flag {background-image: url("/images/flags.png");}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {background-image: url("/images/flags@2x.png");}
+}
+.iti--allow-dropdown {
+	.iti__flag-container,  {
+	    right: 0;
+	    left: auto;
+	}
+} 
 
 @import "layouts/header";
+
 
 
 
